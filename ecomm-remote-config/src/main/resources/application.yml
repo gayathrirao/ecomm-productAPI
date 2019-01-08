@@ -6,7 +6,7 @@ spring:
       server:
         git: 
           uri: https://github.com/gayathrirao/ecomm-remote-config
-          searchPaths: ecomm-productAPI
+          searchPaths: ecomm-productAPI,ecomm-categoryAPI,ecomm-userAPI
           username: gayathrirao
           password: l@l1th@gb
 management:
