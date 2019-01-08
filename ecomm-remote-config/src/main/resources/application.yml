@@ -1,0 +1,21 @@
+server:
+  port: 9000
+spring:
+  cloud:
+    config:
+      server:
+        git: 
+          uri: https://github.com/gayathrirao/ecomm-remote-config
+          searchPaths: ecomm-productAPI
+          username: gayathrirao
+          password: l@l1th@gb
+management:
+  server:
+    port: 9001
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: "always"
