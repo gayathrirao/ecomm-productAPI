@@ -11,6 +11,10 @@ public class HTTP404Exception extends RuntimeException {
 	{
 		super(Message);
 	}
+
+	public HTTP404Exception(String string, Exception ex) {
+		super(string,ex);
+	}
 	
 	
 
