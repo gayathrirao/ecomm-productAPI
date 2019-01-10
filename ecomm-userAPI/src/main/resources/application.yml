@@ -1,1 +1,0 @@
-server:  port: 8095management:  endpoint:    health:      enabled: true  server:    port: 8096spring:  data:    mongodb:      host: localhost      port: 27017      database: ecommuser
