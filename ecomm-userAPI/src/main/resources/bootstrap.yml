@@ -1,3 +1,7 @@
 spring:
-  application:    name: ecomm-userAPI
-  cloud:    config:      uri: http://localhost:9000
+  application:
+    name: ecomm-userAP
+  cloud:
+    config:
+      uri: http://localhost:9000
+      
