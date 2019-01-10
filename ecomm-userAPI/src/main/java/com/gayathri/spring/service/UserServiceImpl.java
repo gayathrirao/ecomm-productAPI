@@ -44,7 +44,10 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public User update(User user) {
+	public User update(String existingUserName,User user) {
+		Optional<User> existingUser = findByUsername(existingUserName);
+		if ( existingUser.get() != null) 
+				userdao.delete(existingUser.get());
 		return userdao.save(user);
 	}
 
@@ -56,5 +59,6 @@ public class UserServiceImpl implements UserService {
 		
 		
 	}
+
 
 }

@@ -6,10 +6,10 @@ import java.util.Optional;
 import com.gayathri.spring.model.User;
 
 public interface UserService {
-	public Optional<User> findByUsername(String user_name);
-	public List<User> listOfAllUser();
-	public User save(User user);
-	public User update(User user);
-	public void delete(String user_name);
+	 Optional<User> findByUsername(String user_name);
+	 List<User> listOfAllUser();
+	 User save(User user);
+	 void delete(String user_name);
+	 User update(String existingUserName, User user);
 
 }
