@@ -24,7 +24,7 @@ import com.netflix.ribbon.proxy.annotation.Hystrix;
 
 public class ProductServiceImpl implements ProductService {
 
-	  final static Logger logger = LoggerFactory.getLogger(ProductServiceImpl.class);
+	  final  Logger logger = LoggerFactory.getLogger(ProductServiceImpl.class);
 
    @Autowired
    private ProductDaoRepository productDao;
